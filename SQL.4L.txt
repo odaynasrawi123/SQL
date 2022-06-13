@@ -1,0 +1,5 @@
+SELECT orders.cust_id,cust_name,orderitems.order_id
+FROM customers,orders,orderitems
+WHERE orders.order_id = orderitems.order_id
+AND customers.cust_id = orders.cust_id AND Amount > 1
+    

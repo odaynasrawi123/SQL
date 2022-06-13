@@ -1,0 +1,4 @@
+SELECT cust_name,order_id,notes
+FROM orders,customers
+WHERE  (customers.cust_id = orders.cust_id)  AND orders.notes IS NOT NULL
+   

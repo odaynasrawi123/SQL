@@ -1,0 +1,8 @@
+SELECT order_id,order_date,cust_name,last_name,
+        COALESCE(
+            delivery_date,
+            'the order was not supllied yet'
+        )
+FROM orders,customers
+WHERE orders.cust_id = customers.cust_id
+   

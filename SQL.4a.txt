@@ -1,0 +1,2 @@
+SELECT cust_id,concat(addrres,'/',postal_code,'/',city,'/',country) AS 'Full address',concat(COALESCE(cust_birthday,'Unknown Year of Birth')) AS 'Year Of Birth'
+FROM customers

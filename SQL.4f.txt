@@ -1,0 +1,4 @@
+SELECT cat_name,COUNT(product.cat_id),AVG(product_price)
+FROM categories,product 
+WHERE categories.cat_id='20' AND product.cat_id='20'
+

@@ -1,0 +1,3 @@
+SELECT cust_name
+FROM customers,orders
+WHERE customers.cust_id=orders.cust_id AND delivery_date IS NULL 

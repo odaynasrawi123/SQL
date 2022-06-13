@@ -1,0 +1,11 @@
+SELECT
+    COUNT(cust_id),
+    country
+FROM
+    Customers
+GROUP BY
+    country
+ORDER BY
+    COUNT(cust_id)
+DESC
+    
